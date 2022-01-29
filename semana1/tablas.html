@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+    <h1>Tablas</h1>
+    <!--
+        Table
+            thead:  Cabecera de la tabla (titulos)
+                tr:
+                    th:
+            tbody: cuerpo de la tabla
+                tr:  filas
+                    td:  columnas
+    -->
+    <table border="1" bgcolor="#8D85EE">
+        <thead bgcolor="#fff">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th bgcolor="#f9fc55">Correo</th>
+                <th>Durección</th>
+                <th>Celular</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td bgcolor="#fff">Pepe</td>
+                <td>Zapata</td>
+                <td bgcolor="#fff">pepe@gmail.com</td>
+                <td>Av. Siempre viva 123</td>
+                <td>999999999</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td bgcolor="#fff">Zapata</td>
+                <td>juan@gmail.com</td>
+                <td>Av. Siempre viva 123</td>
+                <td>888888888</td>
+            </tr>
+            <tr>
+                <td bgcolor="#fff">Luis</td>
+                <td>Zapata</td>
+                <td bgcolor="#fff">luis@gmail.com</td>
+                <td>Av. Siempre viva 123</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ROWSPAN Y COLSPAN -->
+    <!--
+        ROW => HORIZONTAL   _
+        COL => VERTICAL     |
+    -->
+    <h2>Tabla de alumnos</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Curso</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Ingles</td>
+                <td>Pepe</td>
+                <td>Zapata</td>
+                <td>pepe@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Zapata</td>
+                <td>juan@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Matematica</td>
+                <td>Mateo</td>
+                <td>Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mateo</td>
+                <td>Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Fisica</td>
+                <td colspan="2">Mateo Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+            <tr>
+                <td colspan="2">Mateo Zapata</td>
+                <td>Mateo@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
