@@ -25,10 +25,11 @@ body {
 }
 
 .conten-sec-foto {
+    /* border: 4px solid green; */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35vh;
+    height: 27vh;
 }
 
 
