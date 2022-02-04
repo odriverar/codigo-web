@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav div {
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.button-free {
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid hsl(322, 100%, 66%);
+    border-radius: 16px;
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: hsl(322, 100%, 66%);
+}
+
+.section-one {
+    /* border: solid; */
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tittle {
+    font-size: 4em;
+    color: hsl(192, 100%, 9%);
+    text-transform: capitalize;
+}
+
+.text-normal {
+    width: 40%;
+    margin: auto;
+    padding-top: 40px;
+    /* padding-bottom: 40px; */
+    font-size: 18px;
+}
+
+.button-pink {
+    margin-top: 40px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    border: 1px solid hsl(322, 100%, 66%);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.12);
+    -webkit-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.12);
+    -moz-box-shadow: 10px 10px 5px -1px rgba(0,0,0,0.12);
+}
+
+.section-two {
+    display: flex;
+    justify-content: center;
+}
+
+.section-three {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    margin-top: 50px;
+}
+
+.numbers {
+    font-size: 3.5em;
+    color: hsl(192, 100%, 9%);
+}
+
+.text-secondary {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.background-top {
+    background: url(../../imagenes/reto-dos/bg-section-top-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.background-bottom {
+    background: url(../../imagenes/reto-dos/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.section-four {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75vh;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.section-four div:first-child {
+    width: 50%;
+}
+
+.img-desktop {
+    width: 600px;
+}
+
+.tittle-sections {
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.text-sections {
+    width: 70%;
+    text-align: left;
+
+}
+
+.section-five {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.section-five div {
+    width: 50%;
+    text-align: center;
+}
+
+.background-top-dark {
+    background: url(../../imagenes/reto-dos/bg-footer-top-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer div {
+    width: 40%;
+    padding: 30px;
+}
+
+.footer div p {
+    padding: 20px;
+}
+
+
+.logo-white {
+    filter: brightness(0) invert(1);
+    margin-left: 20px;
+}
+
+.text-footer {
+    font-size: 0.8em;
+    width: 40%;
+}
+
+.tittle-footer {
+    font-size: 1em;
+    margin-left: 18px;
+    text-transform: uppercase;
+}
+
+.input-footer {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+}
+
+.button-footer {
+    background-color: hsl(322, 100%, 66%);
+    margin-left: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    font-weight: 550;
+}

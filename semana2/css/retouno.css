@@ -29,9 +29,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 27vh;
+    height: 30vh;
 }
-
 
 .img-principal {
     border-radius: 14px;
