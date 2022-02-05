@@ -210,3 +210,110 @@ body {
     border: none;
     font-weight: 550;
 }
+
+/* Style for responsive design */
+@media only screen and (max-width: 480px) {
+    .nav div {
+        padding: 5px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .img-logo {
+        padding-left: 15px;
+    }
+
+    .button-free {
+        margin-right: 15px;
+    }
+
+    .section-one {
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tittle {
+        width: 90%;
+        font-size: 2em;
+        margin: auto;
+    }
+
+    .text-normal {
+        width: 80%;
+    }
+
+    .img-mockup {
+        width: 400px;
+    }
+
+    .section-three {
+        flex-direction: column;
+    }
+
+    .section-four {
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .section-five {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .img-desktop {
+        /* border: solid; */
+        width: 300px;
+    }
+
+    .tittle-sections {
+        /* border: solid; */
+        width: 100%;
+        font-size: 2em;
+    }
+
+    .text-sections {
+        /* border: solid; */
+        width: 100%;
+    }
+
+    .background-top {
+        /* border: solid; */
+        background: url(../../imagenes/reto-dos/bg-section-top-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .background-bottom {
+        background: url(../../imagenes/reto-dos/bg-section-bottom-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .background-top-dark {
+        background: url(../../imagenes/reto-dos/bg-footer-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+        height: 80vh;   
+        padding: 0;
+    }
+
+    .text-footer {
+        width: 90%;
+    }
+
+    .footer div {
+        width: 90%;
+    }
+}
