@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.text-animado {
+    /* una animación esta compuesto por un nombre basico y un tiempo */
+    animation-name: texto-volador;
+    animation-duration: 10s;
+    animation-iteration-count: 0;
+    border: solid;
+}
+
+@keyframes texto-volador {
+    from {
+        margin-left: 100%;
+        width: 300%;
+        background-color: aqua;
+        border: none;
+    }
+
+    to {
+        margin-left: -100%;
+        background-color: brown;
+        color: #fff;
+        border: none;
+    }
+}
+
+.img-animada {
+    animation-name: img-rezise;
+    animation-duration: 5s;
+    animation-iteration-count: 0;
+}
+
+@keyframes img-rezise {
+    from {
+        width: 20%;
+        height: 20%;
+    }
+
+    to{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.box-uno {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    animation-name: box-animacion;
+    animation-duration: 10s;
+    animation-iteration-count: 0;
+}
+
+
+@keyframes box-animacion {
+    0% {
+        background-color: black;
+    }
+
+    25% {
+        background-color: sandybrown;
+    }
+
+    50% {
+        background-color: rebeccapurple;
+    }
+
+    75% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+    /* 25%{
+        background-color: yellow;
+    } */
+}
+
+.ball-uno {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 255);
+    border-radius: 50%;
+    animation-name: ball-animation;
+    animation-duration: 700ms;
+    animation-iteration-count: 0;
+}
+
+@keyframes ball-animation {
+    from {
+        transform: translateY(0xp);
+    }
+
+    to {
+        transform: translateY(-135px);
+        /* transform: translateX(40px); */
+    }
+}
+
+.lineas {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.texto-animado {
+    animation: texto-animado-dos 5s steps(144) 1s normal both, cursor 500ms steps(50) infinite normal;
+
+    animation-iteration-count: infinite;
+
+    /* animation-name: texto-animado-dos;
+    animation-duration: 2s;
+    animation-timing-function: steps(144);
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-delay: 1s; */
+}
+
+
+
+@keyframes texto-animado-dos {
+    from {
+        width: 0;
+        color: transparent;
+    }    
+
+    to {
+        width: 600px;
+    }
+}
+
+@keyframes cursor {
+    from {
+        border-right-color: rgb(255, 77, 196);
+    }
+
+    to{
+        border-right-color: transparent;
+    }
+}

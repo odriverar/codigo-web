@@ -21,75 +21,114 @@
     <meta name="twitter:description" content="Esta pagina es donde estoy parendiendo HTML, CSS y JS" />
     <meta name="twitter:image"
         content="https://media-exp1.licdn.com/dms/image/C4E1BAQEfNIXEf_JoKg/company-background_10000/0/1546891857260?e=2159024400&v=beta&t=lEtzExkQ-bp5Ga2twiCoxIn7XKLwqA6eumLu44algFI">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<!-- Esta etiqueta nos permite escribir css dentro de un html   -->
-<!-- <style>
-    body{
-        font-family: helvetica;
-    }
-
-    h1{
-        text-decoration: underline;
-    }
-</style> -->
 
 <body>
-    <!-- <h1 style="color: red; text-transform: uppercase;">Inputs</h1> -->
-    <div class="contenedor-principal">
-        <h1>Mi portafolio</h1>
-        <p>
-            Hola mi nombres David Rivera Robles, soy técnico en computación e Informática, estoy aprendiendo a programar
-            en HTML, CSS y JS
-        </p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU"
-            alt="" class="imagen-perfil" width="200">
-        <p>
-            <a class="btn-github" href="https://github.com/odriverar">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" width="20">
-                GitHub
-            </a>
-        </p>
-        <img width="600"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgp3fGHP8sBp1q14oHGLICl-JE2BRU4vrkg&usqp=CAU"
-            alt="" class="imagen-programador">
-        <!-- <img src="https://www.espaciohonduras.net/images/software/articulos/Programacion_concepto/programador.png" alt="programador"> -->
-    </div>
-    <!-- Listas en HTML -->
-    <!-- <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ol> -->
-    <section class="contenedor-clases">
-        <div>
-            <ul class="lista-semanas">
+    <header class="header">
+        <nav class="nav">
+            <ul>
                 <li>
-                    <h5>Semana 1</h5>
-                    <img src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png" alt="semana1"
-                        width="100" />
+                    <a href="">Works</a>
                 </li>
                 <li>
-                    <h5>Semana 2</h5>
-                    <img src="https://freeiconshop.com/wp-content/uploads/edd/folder-open-flat.png" alt="semana1"
-                        width="100" />
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Contanct</a>
                 </li>
             </ul>
-        </div>
-
+        </nav>
+    </header>
+    <section class="banner">
         <div>
-            <h3>Temas semana 1</h3>
-            <a class="link-referencia" href="./semana1/inputs.html">Link para inputs</a>
-            <a class="link-referencia" href="./semana1/form.html">Link a formularios</a>
-            <a class="link-referencia" href="./semana1/tablas.html">Link a Tablas</a>
+            <h1 class="tittle">Hi, I am David,</h1>
+            <h1 class="tittle">Creative Technologist</h1>
+            <p class="resumen">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="btn-primary">Download Resume</button>
         </div>
-
-        <hr class="divisor" />
-
         <div>
-            <h3>Temas semana 2</h3>
-            <a class="link-referencia" href="./semana2/index.html">Introducción a CSS</a>
+            <img class="img-profile"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOc9VDs02ZrmIC7pS3WzBTvXl8UrI3jwAOVQ&usqp=CAU"
+                alt="">
         </div>
+    </section>
+
+    <section class="section-works">
+        <div>
+            <h4 class="text-works">Featured works</h4>
+            <div class="card">
+                <div>
+                    <a class="link-portafolio" href="./semana2/retouno.html">
+                        <img src="./imagenes/portafolio/ntf.png" alt="">
+                    </a>
+                </div>
+                <div class="container-detail">
+                    <a class="link-portafolio" href="./semana2/retouno.html">
+                        <h2>Reto 01 - NFT Design</h2>
+                    </a>
+                    <p>
+                        <span class="label-dark">2022</span>
+                        <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+                    </p>
+                    <p class="resumen">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur voluptatibus saepe hic pariatur, illum esse magnam sed.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <!-- CARD 02 -->
+            <div class="card">
+                <div>
+                    <a class="link-portafolio" href="./semana2/retodos.html" target="_blank">
+                        <img src="./imagenes/portafolio/hundle.png" alt="">
+                    </a>
+                </div>
+                <div class="container-detail">
+                    <a class="link-portafolio" href="./semana2/retodos.html">
+                        <h2>Reto 02 - Build The Community</h2>
+                    </a>
+                    <p>
+                        <span class="label-dark">2022</span>
+                        <span class="text-light">&nbsp;&nbsp;&nbsp;Build The Community</span>
+                    </p>
+                    <p class="resumen">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam rem error delectus id repudiandae quasi ullam.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- card 03 -->
+        <div class="card">
+            <div>
+                <a class="link-portafolio" href="./semana2/retotres.html">
+                    <img src="./imagenes/portafolio/retotres.png" alt="">
+                </a>
+            </div>
+            <div class="container-detail">
+                <a class="link-portafolio" href="./semana2/retotres.html">
+                    <h2>Reto 03 - Comments</h2>
+                </a>
+                <p>
+                    <span class="label-dark">2022</span>
+                    <span class="text-light">&nbsp;&nbsp;&nbsp;Comments</span>
+                </p>
+                <p class="resumen">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea eaque vero earum ipsum.
+                </p>
+            </div>
+        </div>
+        <hr>
     </section>
 </body>
 
