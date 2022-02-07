@@ -310,6 +310,22 @@ footer div a {
         padding-right: 50px;
     }
 
+    .ban-img {
+        width: 171px;
+        height: 171px;
+        margin-bottom: 30px;
+    }
+
+    .ban-tittle {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .ban-resumen {
+        margin-top: 30px;
+    }
+
     .cont-post {
         padding: 10px;
     }
@@ -326,9 +342,14 @@ footer div a {
         margin: 10px;
     }
 
+    .foo-div {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-    .foo-img {
-        margin: 5px;
+    footer {
+        padding: 0;
+        padding-bottom: 30px;
     }
 }
 
