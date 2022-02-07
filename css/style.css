@@ -10,12 +10,13 @@ body {
 
 .contenedor {
 
-    width: 100vw;
-    margin: auto;
+    /* width: 100vw;
+    margin: auto; */
 
     /* FLEX */
     display: flex;
     flex-direction: column;
+
 }
 
 /* INI ---> HEADER <--- INI  */
@@ -151,7 +152,7 @@ body {
 .post-resumen {
     display: flex;
     padding-bottom: 30px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
 }
@@ -160,6 +161,7 @@ body {
     background-color: #fff;
     padding: 20px;
     margin-top: 20px;
+    /* margin-right: 30px; */
     width: 460px;
     /* max-width: 460px; */
 }
@@ -278,6 +280,7 @@ footer {
 
     justify-content: center;
     align-items: center;
+
 }
 
 footer div a {
@@ -298,4 +301,101 @@ footer div a {
 .foo-txt {
     font-size: 14px;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .cont-header {
+        padding: 0;
+        padding-right: 50px;
+    }
+
+    .cont-post {
+        padding: 10px;
+    }
+
+    .section-works {
+        padding: 0;
+    }
+
+    .container-detail a {
+        font-size: 16px;
+    }
+
+    .container-detail {
+        margin: 10px;
+    }
+
+
+    .foo-img {
+        margin: 5px;
+    }
+}
+
+
+@media only screen and (max-width: 1010px ) {
+    .card {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .card div a img {
+        width: 339px;
+        height: 230px;
+    }
+
+    .card-div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 1264px ) {
+    .cont-banner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .ban-tittle {
+        text-align: center;
+    }
+
+    .ban-resumen {
+        padding: 0;
+        text-align: center;
+    }
+
+    .ban-btn {
+        margin-top: 30px;
+    }
+
+    .cont-banner-dos {
+        display: flex; 
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .res-detalle {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 1400px ) {
+    .cont-banner {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .cont-post {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+    .section-works {
+        padding-left: 400px;
+        padding-right: 400px;
+    }
 }
