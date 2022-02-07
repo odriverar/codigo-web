@@ -10,8 +10,8 @@ body {
 
 .contenedor {
 
-    width: 100vw;
-    margin: auto;
+    /* width: 90%;
+    margin: auto; */
 
     /* FLEX */
     display: flex;

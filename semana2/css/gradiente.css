@@ -41,7 +41,7 @@ body {
 .img-avatar {
     /* va de 0 - 1 */
     /* 0 es casi transparente y 1 es el color normal */
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .img-avatar-dos {
