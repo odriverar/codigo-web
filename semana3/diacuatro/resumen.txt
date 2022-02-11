@@ -1,0 +1,18 @@
+Javascript = JS
+Nace el 1995
+JS se ejecuta sobre motores (navegadores, servidores, telefonos, equipos de domotica, desktop, etc...)
+
+react - vue - angular - svelte 
+
+node - deno - nuxt - next 
+
+react-native (movil)
+
+dart - convierte su codigo JS de forma interna: Validar la información.
+
+jquery 
+
+EcmaScript (Documentación de Javascript) version 9
+
+
+

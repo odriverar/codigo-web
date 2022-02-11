@@ -1,0 +1,135 @@
+// Estoy un ejcutador JS en tiempo real
+// Todo lo que escriba se va ejecutar al costado del prorgrama
+/*
+ * Las variables
+ son contenedores que internamente guarda un valor
+ puede ser
+ numerico => En JS esto es un number
+ decimal => En JS esto es un number
+ texto => En JS esto es un string
+ true | false => Boolean
+ */
+/*
+En JS existen 3 formas de declarar una variable
+var 
+let 
+const
+Estas 3 formas van acompañadas del nombre de la variable ejemplo:
+*/
+var nombre = 'Pepito';
+let edad2 = 109;
+const esMayor = true;
+// En JS no es requerido poner que tipo de variable es, JS interpreta en base al valor
+
+
+
+// Vamos a ver la diferencia entre let - var - const
+
+
+// var => Es la forma mas antigua de declarar, actualmente no se debe usar 
+// var es la forma de declarar variables globales, lo cual hace que sean pesadas y a lo largo nos puede traer problemas
+
+var miNombre = "Pepe"
+
+// JS - var nos permite cambiar el valor de las variables
+// uno puede asignar un nuevo valor a una variable ya existente 
+// miNombre = "Pepe"
+// si yo quiero cambiar el valor de la variable miNombre tengo solamente que llamar a la variable y darle el nuevo valor
+
+miNombre = "Juan"
+// al asignarle el valor Juan a miNombre es valor antuguo queda elminado
+
+// ahora var permite cambiar el tipo de valor, es decir yo puedo cambiar el valor de mi variable a caulquier tipo, puede ser un number, boolean 
+miNombre = 10
+
+
+
+// let => Es parecido a var, la diferencia es que let no es global
+let edad = 50
+// como let es parecido a var tambien podemos cambiar su valor
+// en la actualidad debemos usar let si queremos que el valor de la variable cambie
+// nota: si tiene comillas es un string
+edad = "100"
+
+
+// const => Const es un tipo de variable constante, es decir su valor no cambia (no puede ser alterado) una vez declaro el valor este no cambia
+
+const fechaNacimiento = "01/01/100"
+// esto no es posible porque cuando usamos const solo podemos usar un valor
+// fechaNacimiento = "02/02/02"
+
+
+const numero1 = 10;
+const numero2 = 20;
+
+//es una buena practiva usar const, si el valor no va a cambiar
+//const -- variable peso liviano.
+
+let resultado = 0;
+
+resultado = numero1 + numero2;
+resultado = numero1 - numero2;
+resultado = numero1 * numero2;
+resultado = numero1 / numero2;
+
+const numero3 = "10"
+const numero4 = 20
+// el simbolo + se puede usar para concatenar variables
+resultado = numero3 + numero4;
+
+const nombre5 = "Oswaldo"
+const segundoNombre = "David"
+const apellido = "Rivera"
+
+const nombreCompleto = nombre5 + " " + segundoNombre + " " + apellido;
+nombreCompleto;
+
+
+//const formaCorrecta = `${nombre5} ${segundoNombre} ${apellido}
+
+// ahora vamos a aprender las condicionales en JS
+// Si ---> if
+let mensaje = "";
+const edad6 = 15;
+// quiero saber si la persona es mayor de edad
+//cuando hablamos de condivionales usamos algunos simbolos
+// > simbolo mayor 
+// < Simbolo menor 
+// === esto es para comparar si dos cosas son iguales
+// !== si algo es distinto
+// se pueden combinar 
+// >= 
+// <= 
+if (edad6 >= 18){
+  //verifico que esta persona es mayor de edad 
+  mensaje = "Es mayor de edad"
+};
+
+//tambien existe el si no
+
+if (edad6 >= 18) {
+  //verifico que esta persona es mayor de edad 
+  mensaje = "Es mayor de edad"
+} else {
+  // no es mayor
+  mensaje = "Es menor de edad"
+};
+
+// Usando el else if 
+// quiero que si edad es i¡gual a 18 imprima myor de edad
+// si edad es igual a 15 imprima tiene 15 años
+// si no que imprima es menor 
+
+if (edad6 === 18) {
+  mensaje = "Mayor de edad"
+} else if (edad6 === 15) {
+  mensaje = "tiene 15 años"
+} else if (edad6 === 14) {
+  mensaje = "Tiene 14 años"
+} else {
+  mensaje = "es menor"
+}
+  
+
+
+

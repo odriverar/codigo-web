@@ -1,0 +1,83 @@
+GIT / GITHUB Colaborativo
+
+main: siempre debe estar limpio, basicamente con codigo que ha sido probado previamente.
+Crear una rama por tarea, una vez concluida la rama se elimina.
+
+
+feature: cuando queremos implementar una cosa nueva
+bug: cuando queremos arreglar algo que esta hecho
+hot_fix: cambio urgente, lo ideal que no existe.
+
+git checkout -b <<nombre_rama>>             crear y posisionarse en un nueva rama.
+
+git branch -m main
+
+
+to do list | por hacer 
+    Tareas pendientes
+
+haciendo
+    Tareas que se estan trabajando.
+
+Revision
+    Tarea terminada y en Revision
+
+Terminada
+    Tareas concluidas
+
+
+Pull request 
+Debe estar conformado por lo siguiente:
+detalle de lo que se hizo 
+como probar los cmabios o la nueva implementación
+
+si todo esta ok se hace el merge
+
+el merge solo lo hace el lead, pq despues de hacer el merge el branch se elimina.
+
+
+
+
+Tarea Grupal.
+
+Lead: 
+    Crear un nuevo repositorio - codigo_grupo_1
+    Invitar a cada integrante de grupo
+
+Integrante
+    Clonar el repositorio en una carpeta nueva
+
+Profesor 
+    Pasara Tareas, para cada grupo; y el Lead asigna a cada integrante 
+
+Luego cada integrante, creara su branch en base a su tarea y lo resuelve.
+
+
+Luego cada integrante crea su pull request y asigna al lead para su revision.
+
+
+
+hummerlion Leonardo
+
+ShirSir 	Shirley
+
+JhonyWalker1		Jhonatan
+
+
+
+MarioSC21	Mario	
+
+jaraujova  Jeffara
+
+CARLOSAD91 	Carlos Abanto
+
+
+Crear Paginas
+Nosotros
+Galeria
+Contacto
+Proyectos
+Home con un nav 
+Registro
+iniciar sesion
+Inscripción
