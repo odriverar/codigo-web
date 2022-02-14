@@ -10,32 +10,82 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto 30% auto 30%;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto 25% auto 25%;
+    grid-template-rows: auto auto 30%;
+
 
     height: 100vh;
     /* column-gap: 10px;
     row-gap: 10px; */
 }
 
-.container div {
-    border: solid;
+.container > div {
+    /* border: solid; */
 
     margin: 20px;
     border-radius: 12px;
 
-    padding: 20px;
+    padding: 40px;
+}
+
+.cabecera-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: 30px;
+}
+
+.cabecera-item img {
+    border-radius: 50px;
+}
+
+.cabecera-tittle {
+    margin-left: 30px;
+}
+
+.cabecera-tittle > h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cabecera-tittle > p {
+    font-weight: normal;
+}
+
+.parrafo-uno-item {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.parrafo-dos-item {
+    font-size: 17px;
+    color: hsl(0, 0%, 81%);
 }
 
 .item1 {
-    background-color: hsl(263, 55%, 52%);
+    /* background-color: hsl(263, 55%, 52%); */
+    background-color: rgb(123, 52, 198);
+    background-image: url(../imagenes/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% top;
+    background-size: 26%;
     color: #fff;
     grid-column: 1 / 3;
+}
+
+.item1 > div > img {
+    border: 4px solid rgb(185, 103, 246);
 }
 
 .item2 {
     background-color: hsl(217, 19%, 35%);
     color: #fff;
+}
+
+.item2 > div > img {
+    border: 4px solid hsl(0, 0%, 100%);
 }
 
 .item3 {
@@ -44,9 +94,26 @@ body {
     grid-row: 1 / 3;
 }
 
+.item3 > div > img {
+    border: 4px solid hsl(0, 0%, 100%);
+}
+
+.item3 > .parrafo-dos-item {
+    color: hsl(0, 0%, 50%);
+}
+
 .item4 {
     background-color: #fff;
 }
+
+.item4 > div > img {
+    border: 4px solid hsl(0, 0%, 100%);
+}
+
+.item4 > .parrafo-dos-item {
+    color: hsl(0, 0%, 50%);
+}
+
 
 .item5 {
     background-color: hsl(219, 29%, 14%);
@@ -54,3 +121,6 @@ body {
     grid-column: 2 / 4;
 }
 
+.item5 > div > img {
+    border: 4px solid rgb(185, 103, 246);
+}
