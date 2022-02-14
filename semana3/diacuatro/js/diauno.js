@@ -112,3 +112,17 @@ if (edadMayor === 18 || nombreMayor === "Juan"){
 }
 
 // ** tratemos de usar mucho el else
+
+const valor14 = +prompt("Ingrese un numero 11");
+const valor15 = +prompt("Ingrese un numero 21");
+const valor16 = +prompt("Ingrese un numero 21");
+
+let mensajeFinal = "el numero mayor es:" + valor14;
+
+if (valor15 > valor14 && valor15 > valor16){
+    mensajeFinal = "el numero mayor es:" + valor15;
+} else if (valor16 > valor15 && valor16 > valor14) {
+    mensajeFinal = "el numero mayor es:" + valor16
+}
+
+console.log(mensajeFinal);

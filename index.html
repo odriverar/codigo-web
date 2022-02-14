@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/styledos.css">
 </head>
 
 <body>
-    <div class="contenedor">
+    <div class="contenedor-principal">
         <!-- INI === HEADER === INI -->
         <header class="cont-header">
             <nav class="nav-header">
@@ -24,125 +25,129 @@
             </nav>
         </header>
         <!-- FIN === HEADER === FIN -->
-
-        <!-- INI === BANNER === INI -->
-        <section class="cont-banner">
-            <div class="cont-banner-dos">
-                <h1 class="ban-tittle">Hi, I am David,</h1>
-                <h1 class="ban-tittle">Creative Technologist</h1>
-                <p class="ban-resumen">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
-                <button class="ban-btn">Download Resume</button>
-            </div>
-            <div>
-                <img class="ban-img" src="./imagenes/portafolio/IMG_3375.jpg" alt="">
-            </div>
-        </section>
-        <!-- FIN === BANNER === FIN -->
-
-        <!-- INI === POST === INI -->
-        <section class="cont-post">
-            <div class="post-tittle">
-                <h3>Recent posts</h3>
-                <a href="#">View all</a>
-            </div>
-            <div class="post-resumen">
-                <div class="res-detalle">
-                    <h4>Making a design system from scratch</h4>
-                    <p>
-                        <span class="res-fec-tema">24 Feb 2022</span>
-                        <span class="res-fec-tema">&nbsp;&nbsp;&nbsp;Design, Pattern</span>
-                    </p>
-                    <p class="res-resumen">
+        <div class="contenedor">
+            <!-- INI === BANNER === INI -->
+            <section class="cont-banner">
+                <div class="cont-banner-dos">
+                    <h1 class="ban-tittle">Hi, I am David,</h1>
+                    <h1 class="ban-tittle">Creative Technologist</h1>
+                    <p class="ban-resumen">
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </p>
+                    <button class="ban-btn">Download Resume</button>
                 </div>
-                <div class="res-detalle">
-                    <h4>Making a design system from scratch</h4>
-                    <p>
-                        <span class="res-fec-tema">24 Feb 2022</span>
-                        <span class="res-fec-tema">&nbsp;&nbsp;&nbsp;Design, Pattern</span>
-                    </p>
-                    <p class="res-resumen">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
+                <div>
+                    <img class="ban-img" src="./imagenes/portafolio/IMG_3375.jpg" alt="">
                 </div>
+            </section>
+            <!-- FIN === BANNER === FIN -->
+            <!-- INI === POST === INI -->
+            <div class="contenedor-post-principal">
+                <section class="cont-post">
+                    <div class="post-tittle">
+                        <h3>Recent posts</h3>
+                        <a href="#">View all</a>
+                    </div>
+                    <div class="post-resumen">
+                        <div class="res-detalle">
+                            <h4>Making a design system from scratch</h4>
+                            <p>
+                                <span class="res-fec-tema">24 Feb 2022</span>
+                                <span class="res-fec-tema">&nbsp;&nbsp;&nbsp;Design, Pattern</span>
+                            </p>
+                            <p class="res-resumen">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                        <div class="res-detalle">
+                            <h4>Making a design system from scratch</h4>
+                            <p>
+                                <span class="res-fec-tema">24 Feb 2022</span>
+                                <span class="res-fec-tema">&nbsp;&nbsp;&nbsp;Design, Pattern</span>
+                            </p>
+                            <p class="res-resumen">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!-- FIN === POST === FIN -->
-
-        <!-- INI === WORKS === INI -->
-        <section class="section-works">
-            <div>
-                <h4 class="text-works">Featured works</h4>
-                <div class="card">
-                    <div class="card-div">
-                        <a class="link-portafolio" href="./semana2/retouno.html">
-                            <img src="./imagenes/portafolio/ntf.png" alt="">
-                        </a>
+            <!-- FIN === POST === FIN -->
+            <!-- INI === WORKS === INI -->
+            <section class="section-works">
+                <div class="section-works-div">
+                    <h4 class="text-works">Featured works</h4>
+                    <div class="card">
+                        <div class="card-div">
+                            <a class="link-portafolio" href="./semana2/retouno.html">
+                                <img src="./imagenes/portafolio/ntf.png" alt="">
+                            </a>
+                        </div>
+                        <div class="container-detail">
+                            <a class="link-portafolio" href="./semana2/retouno.html">
+                                <h2>Reto 01 - NFT Design</h2>
+                            </a>
+                            <p>
+                                <span class="label-dark">2022</span>
+                                <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+                            </p>
+                            <p class="resumen">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
                     </div>
-                    <div class="container-detail">
-                        <a class="link-portafolio" href="./semana2/retouno.html">
-                            <h2>Reto 01 - NFT Design</h2>
-                        </a>
-                        <p>
-                            <span class="label-dark">2022</span>
-                            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-                        </p>
-                        <p class="resumen">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur voluptatibus saepe
-                            hic pariatur, illum esse magnam sed.
-                        </p>
+                    <!-- CARD 02 -->
+                    <div class="card">
+                        <div class="card-div">
+                            <a class="link-portafolio" href="./semana2/retodos.html" target="_blank">
+                                <img src="./imagenes/portafolio/hundle.png" alt="">
+                            </a>
+                        </div>
+                        <div class="container-detail">
+                            <a class="link-portafolio" href="./semana2/retodos.html">
+                                <h2>Reto 02 - Build The Community</h2>
+                            </a>
+                            <p>
+                                <span class="label-dark">2022</span>
+                                <span class="text-light">&nbsp;&nbsp;&nbsp;Build The Community</span>
+                            </p>
+                            <p class="resumen">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 03 -->
+                    <div class="card">
+                        <div class="card-div">
+                            <a class="link-portafolio" href="./semana2/retotres.html">
+                                <img src="./imagenes/portafolio/retotres.png" alt="">
+                            </a>
+                        </div>
+                        <div class="container-detail">
+                            <a class="link-portafolio" href="./semana2/retotres.html">
+                                <h2>Reto 03 - Comments</h2>
+                            </a>
+                            <p>
+                                <span class="label-dark">2022</span>
+                                <span class="text-light">&nbsp;&nbsp;&nbsp;Comments</span>
+                            </p>
+                            <p class="resumen">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- CARD 02 -->
-                <div class="card">
-                    <div class="card-div">
-                        <a class="link-portafolio" href="./semana2/retodos.html" target="_blank">
-                            <img src="./imagenes/portafolio/hundle.png" alt="">
-                        </a>
-                    </div>
-                    <div class="container-detail">
-                        <a class="link-portafolio" href="./semana2/retodos.html">
-                            <h2>Reto 02 - Build The Community</h2>
-                        </a>
-                        <p>
-                            <span class="label-dark">2022</span>
-                            <span class="text-light">&nbsp;&nbsp;&nbsp;Build The Community</span>
-                        </p>
-                        <p class="resumen">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam rem error delectus id
-                            repudiandae quasi ullam.
-                        </p>
-                    </div>
-                </div>
-                <!-- card 03 -->
-                <div class="card">
-                    <div class="card-div">
-                        <a class="link-portafolio" href="./semana2/retotres.html">
-                            <img src="./imagenes/portafolio/retotres.png" alt="">
-                        </a>
-                    </div>
-                    <div class="container-detail">
-                        <a class="link-portafolio" href="./semana2/retotres.html">
-                            <h2>Reto 03 - Comments</h2>
-                        </a>
-                        <p>
-                            <span class="label-dark">2022</span>
-                            <span class="text-light">&nbsp;&nbsp;&nbsp;Comments</span>
-                        </p>
-                        <p class="resumen">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ea eaque vero earum ipsum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FIN === WORKS === FIN -->
+            </section>
+            <!-- FIN === WORKS === FIN -->
+        </div>
+        <!-- INI === FOOTER === INI -->
         <footer>
             <div class="foo-div">
                 <a href="https://www.facebook.com/odriverar" target="_blank">
@@ -166,9 +171,8 @@
                     Copyright ©2022 All rights reserved
                 </span>
             </p>
-
-
         </footer>
+        <!-- FIN === FOOTER === FIN -->
     </div>
 </body>
 
