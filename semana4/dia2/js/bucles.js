@@ -157,16 +157,16 @@ const hallarDivisoresComunes = (numero1, numero2) => {
 
     const divisores = [];
     const divisores1 = hallarDivisores(numero1, divisores);
-    const divisores2 = hallarDivisores(numero2, divisores);
+    const divisores2 = hallarDivisores(numero2, divisores1);
 
-    const arrayOrdenado = divisores.sort();
+    const arrayOrdenado = divisores2.sort();
 
     console.log(arrayOrdenado);
 
     for (let i = 0; i < arrayOrdenado.length; i++){
-        if (arrayOrdenado[i] === arrayOrdenado[i + 1]){
-            console.log(arrayOrdenado[i]);
-        }
+         if (arrayOrdenado[i] === arrayOrdenado[i + 1]){
+             console.log("sol 01", arrayOrdenado[i]);
+         }
     }
     // console.log("Divisores1", divisores1);
     // console.log("Divisores2", divisores2);
