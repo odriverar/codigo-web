@@ -41,10 +41,23 @@ const calcularAreaCirdunferencia = (radio) => {
 }
 
 //? 06 Determinar el sueldo semanal de un trabajador basándose en sus horas trabajadas y su salario de hora hombre
-
+const determinarSueldoSemanal = (horas, salario) => {
+    if (isNaN(horas, salario)) {
+        return "ERROR: Ingrese las horas y/o el salario";
+    };
+    return `El sueldo semanal es S/: ${horas * salario} nuevos soles,  de un total de ${horas} horas trabajadas`;
+}
 
 //? 07 Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a resolver el problema, determinando cuantas pulgadas debe pedir con base en los metros que requiere. (1 pulgada = 0.0254 m).
+const convertirPulgadasACentimentro = (metros) => {
+    if (isNaN(metros)) {
+        return "ERROR: Ingrese los metros";
+    };
+    const centimetroAPulgada = 0.0254;
 
+    return `Cantidad de tela: ${metros * (1 / centimetroAPulgada)} pulgadas,y equevalen a ${metros} metros`;
+    
+}
 //? 08 Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero peruano.
 
 //? 09 Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron 
@@ -56,4 +69,4 @@ const calcularAreaCirdunferencia = (radio) => {
 //? 12 Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado.
 
 
-console.log(calcularAreaCirdunferencia(0.5))
+console.log(convertirPulgadasACentimentro(200));
