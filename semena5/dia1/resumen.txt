@@ -1,0 +1,13 @@
+DOM 
+Document Object Model, Modelo de Objetos del Documento.
+
+Compuesto por: 
+Navegador - Navigator
+Ventana - Window
+Document - DOM
+
+DOM 
+Document Object Model, Modelo de Objetos del Documento.
+Esto nos permite manejar los elementos de mi HTML para que javascript pueda acceder a ellos.
+
+Esctructura de elementos dentro del DOM
