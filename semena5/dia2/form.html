@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <!-- <h1>Eventos de inputs</h1> -->
+    <!-- onkeyup: cuando se suelta una tecla 
+         onkeypress: cuando se preiosna una tecla
+         onkeydown: cuando se pulsa una tevla y no se suelta
+        -->
+
+    <!-- <input type="text" placeholder="onkeyup" onkeyup="console.log(this.value)"> -->
+
+    <!-- <input type="text" placeholder="onkeypress" onkeypress="console.log(this.value)"> -->
+
+    <!-- <input type="text" placeholder="onkeydown" onkeydown="console.log(this.value)"> -->
+    
+    <!-- Necesitamos *event* como parametro para poder 
+         enviar los valores del teclado a function del JS
+         Recuerden que event es solo el nombre del parametro, pueden colocar otro nombre -->
+
+    <section>
+        <h1>Registro de Usuarios</h1>
+        <form action="">
+            <input type="text" name="nombre" placeholder="Ingresa su nombre" onkeyup="validateInputNoVacios()">
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" onkeyup="validateInputNoVacios()">
+            <input type="text" name="email" placeholder="Ingrese su mail" class="input-email" onkeyup="validarCorreo(event)" autocomplete="off">
+            <span id="email-error" class="text-error">Email incorrect</span>
+            <input type="password" name="password" placeholder="Ingrese su password" onkeyup="validarPassword(event)">
+            <span id="password-error" class="text-error">El password debe tener al menos 8 digitos</span>
+            <input type="text" name="telefono" placeholder="Ingrese su telefono" onkeyup="validateInputNoVacios()">
+            <!-- Cuando un boton es de tipo submit, este boton por default va a recargar la pagina -->
+            <button type="submi" id="btn-crear-usuario" disabled>Crear Usuario</button>
+        </form>
+    </section>
+    <section>
+        <table border>
+            <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Eail</th>
+                <th>Password</th>
+                <th>Celular</th>
+            </thead>
+            <tbody id="table-body">
+                <!-- aqui se agregar las filas y columas desde JS -->
+            </tbody>
+        </table>
+    </section>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
