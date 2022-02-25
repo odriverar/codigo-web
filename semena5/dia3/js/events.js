@@ -50,6 +50,86 @@ btnInfo.onclick = function(event) {
 }
 
 
+const btnAlertaBotones = document.querySelector("#btn-alerta-botones");
+btnAlertaBotones.onclick = function() {
+    Swal.fire({
+        title: "Alerta",
+        text: "Texto de alerta",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Guardar",
+        denyButtonText: "Nel pastel",
+    }).then((resultado) => {
+        if (resultado.isConfirmed) {
+            showAlert("Confirmado", "Se confirmo la operación", "success");
+            console.log("Marco la confirmación");
+        }
+        if (resultado.isDenied) {
+            console.log ("Marco que nel pastel");
+        }
+        if (resultado.isDismissed) {
+            console.log("Marco cancelar");
+        } 
+    })
+}
+
+const btnAlertaNotificacion = document.querySelector("#btn-alerta-notificacion");
+
+//! 1000 equivale a un segundo
+btnAlertaNotificacion.onclick = function() {
+    Swal.fire({
+        position: "top-end", // top, center, top-start, center-start, center-end, bottom, bottom-start, bottom-end
+        icon: "success",
+        title: "Notificación",
+        showConfirmButton: false,
+        timer: 3000,
+    })
+}
+
+const urlMarvel =
+  "https://e.rpp-noticias.io/normal/2022/01/05/464346_1198471.jpg";
+const btnAlertaImagen = document.querySelector("#btn-alerta-imagen");
+
+btnAlertaImagen.onclick = function() {
+    Swal.fire({
+      title: "Imagen",
+      text: "Alerta con Imagen",
+      imageUrl: urlMarvel,
+      imageWidth: 400,
+      imageHeight: 200,
+    });
+}
+
+const btnAlertaCustom = document.querySelector("#btn-alerta-custom");
+
+btnAlertaCustom.onclick = function() {
+    Swal.fire({
+      title: "Custom Alert",
+      text: "Alerta Customizable",
+      background: `url(${urlMarvel})`,
+      color: "#fff",
+      backdrop: `
+        rgba(0, 0, 0, 0.3)
+        url(https://i.gifer.com/origin/61/6170662f09220932f1c45887777f062e.gif)
+        left top
+        no-repeat`,
+    });
+}
+
+const btnAlertaConInputs = document.querySelector("#btn-alerta-inputs");
+btnAlertaConInputs.onclick = function() {
+    Swal.fire({
+        title: "Input para mail",
+        input: "email",
+        inputLabel: "Ingrese su correo",
+        inputPlaceholder: "El correo debe ser valido",
+    }).then(resultado => {
+        //Obtengo el resultado de lo que escribio el usuario en el input
+        console.log(resultado.value);
+    })
+}
+
+
 const paises = document.querySelector("#select-opciones");
 
 // Vamos a  agregar el event onChange
