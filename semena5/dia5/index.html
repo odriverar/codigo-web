@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section-login">
+            <h1>Login</h1>
+            
+            <form action="">
+                <div>
+                    <input type="email" name="email" placeholder="Ingrese su correo" />
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Ingrese su password" />
+                </div>
+                <div>
+                    <button id="btn-login" type="submit">Iniciar sesion</button>
+                </div>
+            </form>
+    </section>
+
+    <section id="usuario-logged">
+        <h1 id="email"></h1>
+        <h1 id="password"></h1>
+
+        <button id="cerrar-sesion">Cerrar sesion</button>
+    </section>
+
+    <script src="./js/localStorage.js"></script>
+</body>
+</html>

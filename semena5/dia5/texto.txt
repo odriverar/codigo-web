@@ -1,0 +1,9 @@
+localStorage
+    Es una herramienta de JS la cual nos permite guardar valores en el navegador, por ejemplo: los datos del usuario, las preferencias del usuario, etc...
+    El tiempo de expiración para localStorage no existe, es decir si uno crea una variable en localStorage esta solo se eliminara cuando el usuario lo indique.
+
+sessionStorage
+    Tambien sirve para guardar informacion de la misma manera que lo guardamos con localStorage, la diferencia es que lo que se guardo solo exste en la ventana que se creo.
+    Si cierro ek navegador esta variable se borra de forma automatica
+    Un uso puede ser para los token, porque son un dato sensible que suele crearse por sesion de usuario y que se borre al cerrar la ventana es lo ideal.
+
