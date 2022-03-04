@@ -1,0 +1,10 @@
+SASS
+Procesador de estilos 
+Se pude decir que sass convierte a CSS en un lenguaje de programación, porque permite crear variables, hacer bucle, hacer funcion e importar archivos.
+
+como SASS es un pre procesador para que el navegador lo pueda entender tenemos que transformar el archivo scss a css 
+
+estilos.scss --> estilos.css
+
+scss --> extension de sass 
+

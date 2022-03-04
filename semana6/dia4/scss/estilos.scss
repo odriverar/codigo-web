@@ -1,0 +1,93 @@
+// Variebles en SASS
+// Variable: Contenedor que almacena un valor.
+// * en SASS podemos usar variables, para guardar colores primarios, secundarios, extras.
+// * medidas que sean repetitivas
+// * fuentes - tipos de letra
+// * logica puede ser mostrar o no objetos.
+
+// ! La forma en la que creamos una variable en sass, es usando el dolar nombre de la variable : el valor
+// ? $nombreVariable: valor
+
+//* En SASS se recomienda que los nombres de las variables esten separados por "-"
+
+// $color-principal: rgb(109, 214, 174);
+// $color-red: #f01;
+// $padding-1: 10px;
+
+// TODO: Esta variable que acabamos de crear la podemos usar  en cualquier parte de nuestro archivo.
+
+//? Consejo: es recomendable tener un archivo que contenga todas las variables, para poder importarlo en los distintos archivos de tipo SASS.
+
+
+// Una de las formas de importar un scss es usando el @import
+//* Una vez que importamos nuestro archivo ya podemos usar nuestras variables
+@import "./variables.scss";
+
+body {
+    margin: $padding-1;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: $color-principal;
+}
+
+h1 {
+    color: $color-red;
+    padding: $padding-1;
+}
+
+//* mixins en SASS
+//* Son un tipo de funcion la cual nos permite almacenar un codigo y poder reutilizarlo, podemos pasar variebles
+
+@mixin alert($bg: green) {
+    background-color: $bg;
+    padding: $padding-1;
+    border-radius: $padding-1;
+    color: #fff;
+    margin-bottom: $padding-1
+}
+
+.success {
+    @include alert;
+}
+
+.info {
+    @include alert($bg: rgb(37, 194, 241))
+}
+
+.warning {
+    @include alert($bg: rgb(229, 245, 87))
+}
+
+.danger {
+    @include alert($bg: rgb(255, 110, 110))
+}
+
+// Asi como los mixin retornan una porcion de codigo; tambien pueden retornar una clase directo
+
+@mixin generate-icons($name, $icon, $color, $size){
+    .div-icon-#{$name} {
+        background: url("../images/#{$icon}");
+        border: solid 2px $color;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: $size;
+        height: $size;
+    };
+};
+
+@include generate-icons("phone", "iphone.jpeg", rgb(252, 135, 143), 400px);
+@include generate-icons("mail", "gmail.jpeg", rgb(164, 226, 123), 400px);
+@include generate-icons("search", "search.png", rgb(50, 163, 255), 400px);
+@include generate-icons("laptop", "mac.png", rgb(215, 83, 255), 400px);
+
+// Vamos a crear un bucle usando SASS
+// SASS tambien tiene un for 
+
+// Esto es un bucle que inicia en 1 y termina en 5
+@for $i from 1 through 10 {
+    //vamos a crear 5 container 
+    .container-#{$i}{
+        background-color: rgb($i * 120, $i * 100, $i * 32);
+        height: 200px * $i / 2;
+    }
+}
