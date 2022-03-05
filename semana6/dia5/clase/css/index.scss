@@ -1,0 +1,30 @@
+$bg-dark: rgb(22, 52, 151);
+$text-dark: rgb(255, 255, 255);
+
+$bg-light: rgb(31, 255, 162);
+$text-light: rgb(0, 0, 0);
+
+
+
+// body[data-mode="light"] {
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     background-color: $bg-light;
+//     color: $text-light;
+// }
+
+// body[data-mode="dark"] {
+//     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//     background-color: $bg-dark;
+//     color: $text-dark;
+// }
+
+@mixin theme($mode) {
+    body[data-mode="#{$mode}"] {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: $bg-#{$mode};
+        color: $text-#{$mode};
+}
+}
+
+@include theme("light");
+@include theme("dark");
