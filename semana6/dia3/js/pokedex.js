@@ -11,7 +11,7 @@ const obtenerPokemones = async () => {
   const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
   const data = await response.json();
 
-  console.log(data.results);
+   console.log(data.results);
   setPokemonsInView(data.results);
 };
 
@@ -55,6 +55,8 @@ const setPokemonsInView = (results) => {
   });
 };
 
+
+
 // cuando debe ejecutarse?
 const obtenerDetallePokemon = async (url) => {
   const response = await fetch(url);
@@ -91,6 +93,6 @@ const getColorPokemon = async (id) => {
   // si data.color.name = red
   // buscar dentro del objeto color por el key
   // como el key es red esto retorna rgba(255, 48, 50, 0.7)
-  console.log(data.color.name);
+  // console.log(data.color.name);
   return color[data.color.name];
 };
