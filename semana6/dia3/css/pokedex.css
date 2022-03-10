@@ -1,3 +1,9 @@
+body {
+  font-family: 'Turret Road', cursive;
+  /* font-family: 'Baloo Tammudu 2', cursive; */
+  background-color: hsl(0, 7%, 83%);
+}
+
 .text-title {
   text-transform: capitalize;
   font-weight: bold;
