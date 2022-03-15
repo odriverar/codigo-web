@@ -50,12 +50,13 @@ const containerMovies = document.querySelector("#container-videos");
 const renderMovies = (arregloPeliculas, titulo) => {
   const html = `
                     <div class="col-md-12 mt-3">
-                        <h4 class="gender-movie">${arregloPeliculas.length > 0 ? titulo : ""
-    }</h4>
+                        <h4 class="gender-movie">${
+                          arregloPeliculas.length > 0 ? titulo : ""
+                        }</h4>
                         <div class="row">
                             ${arregloPeliculas.map(
-      (pelicula) =>
-        `<div class="col-md-3">
+                              (pelicula) =>
+                                `<div class="col-md-3">
                                 <video onmouseover="this.play()" onmouseout="this.pause()" controls muted
                                     poster=${pelicula.wallpaper}
                                     class="video"
@@ -63,7 +64,7 @@ const renderMovies = (arregloPeliculas, titulo) => {
                                 <h5 class="title">${pelicula.name}</h5>
                                 <p class="subtitle">${pelicula.director}</p>
                             </div>`
-    )}
+                            )}
                         </div>
                     </div>
     `;

@@ -8,4 +8,6 @@ body {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.2em;
+
+  /* color: rgba(154, 204, 80, 0.63); */
 }

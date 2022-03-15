@@ -3,7 +3,6 @@
  */
 
 // const URL = "https://62281ff09fd6174ca81b97f8.mockapi.io/api/v1/movies";
-
 // const URL = "https://622ab10c14ccb950d222baf9.mockapi.io/api/v1/movies";
 
 const URL = "http://localhost:3000/movies";
